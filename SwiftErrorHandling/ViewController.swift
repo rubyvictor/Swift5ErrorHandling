@@ -60,6 +60,44 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapSave(_ sender: Any) {
+        
+        handleSaveProperly()
     }
+    
+    
+    //MARK: - Not good save
+    
+    func forcesave() {
+        try! persistenceService.save()
+    }
+    //MARK: - optional save
+    
+    func attemptSave() {
+        try? persistenceService.save()
+    }
+    
+    func handleSaveProperly() {
+        
+        var alert: UIAlertController?
+        
+        do {
+            
+            try persistenceService.save()
+            alert = alertService.alert(message: "Hurray - we saved it!")
+            
+        } catch PersistenceError.invalidContext {
+            alert = alertService.alert(message: "There's something wrong with the context.")
+        } catch PersistenceError.failedToWriteToDisk {
+            alert = alertService.alert(message: "Something went wrong and failed to save to disk.")
+        } catch {
+            alert = alertService.alert(message: "The SDK didn't work.")
+        }
+        
+        if let unwrappedAlert = alert {
+            present(unwrappedAlert, animated: true)
+        }
+    }
+
+    
 }
 
