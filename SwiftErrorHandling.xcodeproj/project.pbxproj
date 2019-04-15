@@ -13,6 +13,9 @@
 		B1D4730A2264846A00E4B2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D473092264846A00E4B2F5 /* Assets.xcassets */; };
 		B1D4730D2264846A00E4B2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D4730B2264846A00E4B2F5 /* LaunchScreen.storyboard */; };
 		B1D473182264846A00E4B2F5 /* SwiftErrorHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D473172264846A00E4B2F5 /* SwiftErrorHandlingTests.swift */; };
+		B1D4732322648F8400E4B2F5 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4732222648F8400E4B2F5 /* NetworkingService.swift */; };
+		B1D4732522648F9B00E4B2F5 /* AlertServiice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4732422648F9B00E4B2F5 /* AlertServiice.swift */; };
+		B1D4732722648FB200E4B2F5 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D4732622648FB200E4B2F5 /* PersistenceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		B1D473132264846A00E4B2F5 /* SwiftErrorHandlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftErrorHandlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D473172264846A00E4B2F5 /* SwiftErrorHandlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftErrorHandlingTests.swift; sourceTree = "<group>"; };
 		B1D473192264846A00E4B2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D4732222648F8400E4B2F5 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		B1D4732422648F9B00E4B2F5 /* AlertServiice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServiice.swift; sourceTree = "<group>"; };
+		B1D4732622648FB200E4B2F5 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				B1D473092264846A00E4B2F5 /* Assets.xcassets */,
 				B1D4730B2264846A00E4B2F5 /* LaunchScreen.storyboard */,
 				B1D4730E2264846A00E4B2F5 /* Info.plist */,
+				B1D4732222648F8400E4B2F5 /* NetworkingService.swift */,
+				B1D4732422648F9B00E4B2F5 /* AlertServiice.swift */,
+				B1D4732622648FB200E4B2F5 /* PersistenceService.swift */,
 			);
 			path = SwiftErrorHandling;
 			sourceTree = "<group>";
@@ -197,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D4732722648FB200E4B2F5 /* PersistenceService.swift in Sources */,
+				B1D4732522648F9B00E4B2F5 /* AlertServiice.swift in Sources */,
+				B1D4732322648F8400E4B2F5 /* NetworkingService.swift in Sources */,
 				B1D473052264846800E4B2F5 /* ViewController.swift in Sources */,
 				B1D473032264846800E4B2F5 /* AppDelegate.swift in Sources */,
 			);
